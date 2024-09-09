@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from typing import Callable
 
+# -----------
+# Fuzzy logic
+# -----------
+
 OR = 'OR'
 AND = 'AND'
 NONE = 'NONE'
@@ -218,6 +222,10 @@ rules = [
 
 # Create the fuzzy system
 fs = FuzzySystem([proximity_fv, speed_fv], rules)
+
+# ----------
+# Init V-REP
+# ----------
 
 import vrep
 import sys
